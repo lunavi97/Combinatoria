@@ -20,4 +20,8 @@ public class CombinatoriaCalc {
     }
     return res;
   }
+  
+  public int variacionConRepeticion(int m, int n) {
+    throw new RuntimeException("Método no implementado");
+  }
 }

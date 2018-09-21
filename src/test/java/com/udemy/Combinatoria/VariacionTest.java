@@ -40,5 +40,22 @@ public class VariacionTest {
   public void returns720_IfMAndNAre6() {
     Assert.assertEquals(720, cCalc.variacionSinRepeticion(6, 6));
   }
+  
+  // Variación con repetición
+  
+  @Test
+  public void returns9_IfMIs3AndNIs2() {
+    cCalc.variacionConRepeticion(3, 2);
+  }
+  
+  @Test
+  public void returns4084101_IfMIs21AndNIs5() {
+    cCalc.variacionConRepeticion(21, 5);
+  }
+  
+  @Test
+  public void returns14348907_IfMIs3AndNIs15() {
+    cCalc.variacionConRepeticion(3, 15);
+  }
 
 }
