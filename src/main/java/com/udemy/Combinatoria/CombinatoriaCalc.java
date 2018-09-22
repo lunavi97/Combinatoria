@@ -20,7 +20,7 @@ public class CombinatoriaCalc {
     }
     return res;
   }
-  
+
   /**
    * Número de variaciones de un conjunto de m elementos tomados
    * en tuplas de n elementos, con elementos repetidos.
@@ -29,9 +29,9 @@ public class CombinatoriaCalc {
    * @return cantidad de tuplas
    */
   public int variacionConRepeticion(int m, int n) {
-    throw new RuntimeException("Método no implementado");
+    return (int) Math.pow(m, n);
   }
-  
+
   /**
    * Número de n-tuplas ordenadas posibles.
    * @param n - cantidad de elementos
@@ -40,7 +40,7 @@ public class CombinatoriaCalc {
   public int permutacionSinRepeticion(int n) {
     throw new RuntimeException("Método no implementado");
   }
-  
+
   /**
    * Permutaciones con repetición.
    * @param n - cantidad de elementos
@@ -50,7 +50,7 @@ public class CombinatoriaCalc {
   public int permutacionConRepetición(int n, int[] vec) {
     throw new RuntimeException("Método no implementado");
   }
-  
+
   /**
    * Número de agrupaciones de elementos de una colección
    * sin importar el orden de selección.
@@ -61,7 +61,7 @@ public class CombinatoriaCalc {
   public int combinacionSinRepeticion(int m, int n) {
     throw new RuntimeException("Método no implementado");
   }
-  
+
   /**
    * Combinaciones con repetición.
    * @param m - cantidad de elementos
