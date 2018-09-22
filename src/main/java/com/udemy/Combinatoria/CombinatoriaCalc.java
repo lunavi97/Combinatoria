@@ -83,6 +83,6 @@ public class CombinatoriaCalc {
    * @return cantidad de tuplas
    */
   public int combinacionConRepeticion(int m, int n) {
-    throw new RuntimeException("Método no implementado");
+    return combinacionSinRepeticion(m + n - 1, n);
   }
 }
