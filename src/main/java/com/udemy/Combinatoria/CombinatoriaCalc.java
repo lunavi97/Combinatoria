@@ -50,7 +50,19 @@ public class CombinatoriaCalc {
    * @return cantidad de tuplas
    */
   public int permutacionConRepetición(int n, int[] vec) {
-    throw new RuntimeException("Método no implementado");
+    if (vec == null || vec.length == 0) {
+      return permutacionSinRepeticion(n);
+    }
+
+    int finIteracion = n - vec[0];
+    int res = n;
+    for (int i = 1; i < finIteracion; i++) {
+      res *= --n;
+    }
+    for (int i = 1; i < vec.length; i++) {
+      res /= permutacionSinRepeticion(vec[i]);
+    }
+    return res;
   }
 
   /**
