@@ -38,7 +38,9 @@ public class CombinatoriaCalc {
    * @return cantidad de tuplas
    */
   public int permutacionSinRepeticion(int n) {
-    throw new RuntimeException("Método no implementado");
+    int res = n;
+    while (n > 1) res *= --n;
+    return res;
   }
 
   /**
