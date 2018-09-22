@@ -34,8 +34,8 @@ public class PermutacionTest {
   }
   
   @Test
-  public void returns454053600_IfNIs15AndVecIs5_2_3_2() {
-    Assert.assertEquals(454053600, new int[] {5, 2, 3, 2});
+  public void returns2162160_IfNIs13AndVecIs5_2_3_2() {
+    Assert.assertEquals(2162160, cCalc.permutacionConRepetición(13, new int[] {5, 2, 3, 2}));
   }
 
 }
